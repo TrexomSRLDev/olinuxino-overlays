@@ -1,0 +1,14 @@
+/dts-v1/;
+
+/ {
+	compatible = "allwinner,sun5i-a13";
+	description = "LCD-OLinuXino-4.3TS 480x272 panel with resistive TS and analog interface";
+
+	fragment@0 {
+		target-path = "/panel";
+
+		__overlay__ {
+			compatible = "ampire,am320240l9tnqw";
+		};
+	};
+};
